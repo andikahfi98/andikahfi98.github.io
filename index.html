@@ -2285,7 +2285,7 @@
         }
       }
 
-      /* Projects: three cards per desktop carousel page */
+      /* PROJECTS — UNIFORM 4 CARD GRID */
       .project-carousel {
         max-width: 1160px;
         margin: 0 auto;
@@ -2312,7 +2312,7 @@
         align-items: stretch;
       }
 
-      /* Three projects per carousel page */
+      /* Setiap batch berisi 4 project */
       .proj-batch,
       .proj-batch--single,
       .proj-batch--two {
@@ -2321,7 +2321,7 @@
         min-width: 100%;
         min-height: 0;
         display: grid !important;
-        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
         grid-template-rows: auto !important;
         gap: 17px;
         padding: 7px;
@@ -2844,7 +2844,7 @@
           transform: none;
         }
       }
-      /* Tablet: reflow each page into two columns */
+      /* Tablet: tetap 4 per batch, ditampilkan 2 × 2 */
       @media (max-width: 1000px) {
         .proj-batch,
         .proj-batch--single,
@@ -2858,7 +2858,7 @@
         }
       }
 
-      /* Mobile: stack the cards in each page */
+      /* Mobile: tetap satu batch berisi 4, ditampilkan vertikal */
       @media (max-width: 600px) {
         .proj-batch,
         .proj-batch--single,
@@ -7032,7 +7032,7 @@
         }
 
           /* ---------- DYNAMIC PROJECTS ---------- */
-        var PROJECTS_PER_BATCH = 3;
+        var PROJECTS_PER_BATCH = 4;
         var currentProjectBatch = 0;
         var projectScrollFrame = null;
 
