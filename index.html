@@ -2285,7 +2285,7 @@
         }
       }
 
-      /* PROJECTS — UNIFORM 4 CARD GRID */
+      /* Projects: three cards per desktop carousel page */
       .project-carousel {
         max-width: 1160px;
         margin: 0 auto;
@@ -2312,7 +2312,7 @@
         align-items: stretch;
       }
 
-      /* Setiap batch berisi 4 project */
+      /* Three projects per carousel page */
       .proj-batch,
       .proj-batch--single,
       .proj-batch--two {
@@ -2321,7 +2321,7 @@
         min-width: 100%;
         min-height: 0;
         display: grid !important;
-        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
         grid-template-rows: auto !important;
         gap: 17px;
         padding: 7px;
@@ -2844,7 +2844,7 @@
           transform: none;
         }
       }
-      /* Tablet: tetap 4 per batch, ditampilkan 2 × 2 */
+      /* Tablet: reflow each page into two columns */
       @media (max-width: 1000px) {
         .proj-batch,
         .proj-batch--single,
@@ -2858,7 +2858,7 @@
         }
       }
 
-      /* Mobile: tetap satu batch berisi 4, ditampilkan vertikal */
+      /* Mobile: stack the cards in each page */
       @media (max-width: 600px) {
         .proj-batch,
         .proj-batch--single,
@@ -7032,7 +7032,7 @@
         }
 
           /* ---------- DYNAMIC PROJECTS ---------- */
-        var PROJECTS_PER_BATCH = 4;
+        var PROJECTS_PER_BATCH = 3;
         var currentProjectBatch = 0;
         var projectScrollFrame = null;
 
@@ -7143,6 +7143,22 @@
             ],
             link: "https://github.com/andikahfi98/fmcg-data-engineering-platform",
             img: "Kopdes.png"
+          },
+          {
+            id: "p9",
+            category: "Full-Stack Analytics",
+            title: "Drop Point Operations Intelligence",
+            desc: "Built an unofficial local-first logistics prototype for six simulated J&T drop points, with role-scoped dashboards, n8n reports, and a Regional Manager Telegram bot.",
+            tags: [
+              "FastAPI",
+              "PostgreSQL",
+              "React",
+              "n8n",
+              "Telegram"
+            ],
+            link: "https://github.com/andikahfi98/drop-point-operations-intelligence",
+            // J&T logo: Wikimedia Commons, File:J&T Express logo.svg.
+            img: "JNT.svg"
           },
                     
           
